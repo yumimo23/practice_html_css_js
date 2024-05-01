@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+<body>
+    <div>
+        <label for="myname" id="myname_label">お名前: </label>
+        <input type="text" id="myname">
+    </div>
+
+    <script>
+        document.getElementById('myname_label').style.backgroundColor = '#ccc';
+        document.getElementById('myname').addEventListener('blur', () => {
+            if (document.getElementById('myname').value === '') {
+                document.getElementById('myname_label').style.color = 'red';
+            } else {
+                document.getElementById('myname_label').style.color = 'black';
+            }
+        });
+    </script>
+</body>
+</html>

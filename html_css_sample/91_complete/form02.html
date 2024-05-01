@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+<body>
+    <form action="">
+        <dl>
+            <dt>興味のある技術（1つ以上選択）</dt>
+            <dd>
+                <ul>
+                    <li><label><input type="checkbox" name="q1[]" value="JavaScript"> JavaScript</label></li>
+                    <li><label><input type="checkbox" name="q1[]" value="PHP"> PHP</label></li>
+                    <li><label><input type="checkbox" name="q1[]" value="Python"> Python</label></li>
+                </ul>
+            </dd>
+        </dl>
+        <div id="q1_1_option">
+            <dt>どちらがお好きですか？</dt>
+            <dd>
+                <ul>
+                    <li><label><input type="radio" name="q2" value="JavaScript"> JavaScript</label></li>
+                    <li><label><input type="radio" name="q2" value="TypeScript" checked> TypeScript</label></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <button type="submit">送信する</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('q1_1_option').style.display = 'none';
+
+        const option_js = document.querySelector('input[name="q1[]"][value="JavaScript"]');
+
+        document.querySelector('form').addEventListener('submit', (event) => {
+            event.preventDefault();
+            console.log('プログラムが動きました');
+
+            const q1 = document.querySelector('input[name="q1[]"]:checked');
+            if (!q1) {
+                window.alert('興味のある技術を選択してください');
+            }
+        });
+    </script>
+</body>
+</html>
