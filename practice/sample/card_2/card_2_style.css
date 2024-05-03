@@ -1,0 +1,47 @@
+@import url(../sanitize.css);
+
+body {
+    font-family: "Baloo 2", cursive;
+  }
+  
+  .main-wrapper {
+    contain: layout inline-size style;
+  }
+  
+  .wrapper {
+    box-shadow: inset 2px 1px 8px #ccc;
+    padding: 18px;
+    width: 300px;
+    margin: 2rem auto;
+    border-radius: 20px;
+  }
+  
+  .img-wrapper {
+    width: 200px;
+    margin: auto;
+  }
+  
+  img {
+    width: 100%;
+    filter: drop-shadow(-1px -2px 2px black);
+  }
+  
+  .notes {
+    text-align: center;
+  }
+  
+  @container (min-width: 800px) {
+    .info {
+      display: flex;
+    }
+  
+    h2 {
+      margin-right: 25px;
+    }
+  
+    .notes {
+      width: 75%;
+      margin: 2rem auto;
+    }
+  }
+  
