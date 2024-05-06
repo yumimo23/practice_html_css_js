@@ -47,6 +47,7 @@ li {
 -------------------------------------------*/
 #header {
   display: flex;
+  /* space-between - 両端揃え */
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
