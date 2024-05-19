@@ -51,6 +51,7 @@ img {
 #standard ul {
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 #standard li {
     list-style: none;
@@ -60,6 +61,7 @@ img {
 #moved ul {
     display: flex;
     justify-content: space-between;
+    padding: 0;
 }
 #moved li {
     list-style: none;
