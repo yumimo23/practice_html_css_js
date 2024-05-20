@@ -77,13 +77,12 @@ img {
 }
 
 /* button */
-
-.button-2 {
+.stbtn-nomal {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 250px;
-    /* margin: 250px; */
+    min-width: 250px;
+    margin: 0 auto;
     padding: .9em 2em;
     border: none;
     border-radius: 5px;
@@ -93,11 +92,11 @@ img {
     font-size: 1em;
 }
 
-.button-2:hover {
+.stbtn-nomal:hover {
     background-color: #1579c0;
 }
 
-.button-55 {
+.stbtn-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,7 +111,7 @@ img {
     font-size: 1em;
 }
 
-.button-55::after {
+.stbtn-link::after {
     width: 1.25em;
     height: 1.25em;
     margin-left: 8px;
@@ -120,11 +119,11 @@ img {
     content: '';
 }
 
-.button-55::hover {
+.stbtn-link::hover {
     background-color: #1579c0;
 }
 
-.button-36 {
+.mvbtn-inversion {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,14 +137,14 @@ img {
     font-size: 1em;
 }
 
-.button-36:hover {
+.mvbtn-inversion:hover {
     border: none;
     background-color: #2589d0;
     color: #fff;
     font-weight: 600;
 }
 
-.button-36::after {
+.mvbtn-inversion::after {
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
@@ -155,11 +154,11 @@ img {
     content: '';
 }
 
-.button-36:hover::after {
+.mvbtn-inversion:hover::after {
     border-color: #fff;
 }
 
-.button-37 {
+.mvbtn-process {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,11 +173,11 @@ img {
     font-size: 1em;
 }
 
-.button-37:focus {
+.mvbtn-process:focus {
     color: transparent;
 }
 
-.button-37:focus::before {
+.mvbtn-process:focus::before {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,7 +188,7 @@ img {
     content: '';
 }
 
-.button-37::after {
+.mvbtn-process::after {
     transform: rotate(45deg);
     width: 5px;
     height: 5px;
@@ -199,11 +198,11 @@ img {
     content: '';
 }
 
-.button-37:focus::after {
+.mvbtn-process:focus::after {
     content: none;
 }
 
-.button-64 {
+.mvbtn-favorite {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,11 +216,11 @@ img {
     font-size: 1em;
 }
 
-.button-64:hover {
+.mvbtn-favorite:hover {
     background-color: f1443e;
 }
 
-.button-64::after {
+.mvbtn-favorite::after {
     width: 1.25em;
     height: 1.25em;
     margin-left: 8px;
